@@ -23,7 +23,7 @@ Add a container element where you want the sponsorship to appear, followed by th
 
 ```html
 <div id="AA-container" data-pub-id="YOUR_PUBLISHER_ID" data-format="card"></div>
-<script src="https://asynchads.com" async></script>
+<script src="https://cdn.asynchads.com/content.js" async></script>
 ```
 
 ### Supported Formats (`data-format`)
@@ -33,7 +33,7 @@ Add a container element where you want the sponsorship to appear, followed by th
 ## Architecture Overview
 
 1. **Hydration:** On `DOMContentLoaded` (or immediately if the DOM is ready), the script locates `#AA-container` and injects the base stylesheet (`styles.css`).
-2. **Contextual Fetch:** Requests an active campaign from `https://asynchads.com` using only the `pub_id`, `format`, and locally excluded campaign IDs.
+2. **Contextual Fetch:** Requests an active campaign from `https://cdn.asynchads.com` using only the `pub_id`, `format`, and locally excluded campaign IDs.
 3. **Telemetry:** Uses `navigator.sendBeacon` (with a `fetch` `keepalive` fallback) to record verified views and clicks without slowing down outbound navigation.
 
 ## License
