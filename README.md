@@ -4,9 +4,14 @@ The lightweight, zero-cookie client-side script used to render contextual sponso
 
 We keep our client script open-source so developers, open-source maintainers, and security teams can inspect every line of code before adding it to their sites.
 
-## Security & Privacy Guarantees
+## Ethical Standards & User Respect
 
-* **Zero Cookies & No Fingerprinting:** Does not set tracking cookies or collect personal user data. Frequency capping uses a simple local campaign counter in `localStorage` (`_a_freq`).
+* **We Respect Ad Blockers:** If a visitor uses an ad blocker (like uBlock Origin or Brave Shields), our script fails silently and hides the container cleanly. We never write evasion scripts, proxy workarounds, or retry loops to bypass user preferences.
+* **Zero Cookies & No Fingerprinting:** Does not set tracking cookies, track users across websites, or collect personal data. Frequency capping uses a simple local campaign counter in `localStorage` (`_a_freq`).
+* **Respecting Everyone:** Built to support independent creators and open-source maintainers without compromising the privacy or browsing experience of their visitors.
+
+## Security & Performance Guarantees
+
 * **XSS-Safe DOM Rendering:** Builds all ad containers strictly using `document.createElement` and `textContent`—never `innerHTML`.
 * **Strict HTTPS Enforcement:** Validates all destination URLs, tracking beacons, and image assets to ensure they use `https://` before rendering.
 * **Lightweight & Non-Blocking:** Loads asynchronously (`async`) with zero external dependencies (~5KB unminified) so it never blocks page rendering or hurts Core Web Vitals.
