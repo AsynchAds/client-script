@@ -29,7 +29,6 @@ Add a container element where you want the sponsorship to appear, followed by th
 ### Supported Formats (`data-format`)
 * `card` — Standard sidebar or footer card with image, title, and description.
 * `inline` — Compact single-row text and icon placement for documentation or blog posts.
-* `banner` — Responsive banner layout with mobile and desktop image support.
 
 ## Architecture Overview
 
