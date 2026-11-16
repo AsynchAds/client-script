@@ -1,4 +1,3 @@
-[![AI Ready: A+](https://shields.io{encodedGrade}-34d399)](https://llms-audit.vercel.app)
 # AsynchAds Client Script (`content.js`)
 
 The lightweight, zero-cookie client-side script used to render contextual sponsorships on publisher websites. 
