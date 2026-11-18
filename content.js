@@ -1,3 +1,5 @@
+/*! AsynchAds Client Tag | MIT License | https://asynchads.com */
+
 (function () {
   if (window.__asynchads_initialized) return;
   window.__asynchads_initialized = true;
