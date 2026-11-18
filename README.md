@@ -1,8 +1,8 @@
 # AsynchAds Client Script (`content.js`)
 
-The lightweight, zero-cookie client-side script used to render contextual sponsorships on publisher websites. 
+The lightweight, zero-cookie client-side script used to render contextual sponsorships on publisher websites.
 
-We keep our client script open-source so developers, open-source maintainers, and security teams can inspect every line of code before adding it to their sites.
+We keep our client script publicly auditable so developers, open-source maintainers, and security teams can inspect every line of code before adding it to their sites.
 
 ## Ethical Standards & User Respect
 
@@ -29,6 +29,13 @@ Add a container element where you want the sponsorship to appear, followed by th
 ### Supported Formats (`data-format`)
 * `card` — Standard sidebar or footer card with image, title, and description.
 * `inline` — Compact single-row text and icon placement for documentation or blog posts.
+
+### Single Page Applications (React, Next.js, Vue)
+For client-side route transitions where containers mount after initial page load, re-run hydration manually:
+
+```javascript
+window.AsynchAdsInit?.();
+```
 
 ## Architecture Overview
 
